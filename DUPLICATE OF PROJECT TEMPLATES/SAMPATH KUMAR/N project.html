@@ -1,0 +1,350 @@
+<!doctype html>
+
+<!--
+============================================================
+MARK GROUPS — SINGLE FILE PROJECT TEMPLATE
+============================================================
+EDIT ONLY THIS FILE.
+
+SEARCH for:
+    window.PROJECTS = [
+
+Each project is an object. You can directly change:
+    title
+    category
+    intro
+    location
+    area
+    status
+    client
+    plot
+    type
+    quote
+    overview
+    hero
+    before
+    after
+    approach
+    spaces
+    timeline
+    materials
+    gallery
+    morePhotos
+
+IMAGE EXAMPLE:
+    hero: "assets/projects/meadows/hero.jpg"
+
+VIDEO:
+    The hero media can be connected later to an MP4/WebM path.
+
+IMPORTANT:
+- Save this HTML after editing.
+- Refresh the browser with Ctrl + F5.
+- If an image is not available, the design intentionally shows IMAGE HOLDER.
+- This file contains the HTML + CSS + JavaScript + all 5 project data.
+============================================================
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MARK GROUPS project detail template">
+  <title>MARK GROUPS — Project</title>
+
+  <!-- Luxury serif + clean modern sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="n project.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav nav-left">
+    <a href="../mark-groups-website/index.html#interiors">INTERIORS</a>
+    <a href="../mark-groups-website/index.html#construction">CONSTRUCTION</a>
+    <a href="../mark-groups-website/index.html#furniture">CUSTOM FURNITURE</a>
+    <a href="../mark-groups-website/index.html#real-estate">REAL ESTATE</a>
+  </nav>
+
+  <nav class="nav nav-right">
+    <a href="../mark-groups-website/index.html#projects">PROJECTS</a>
+    <a href="../mark-groups-website/index.html#about">ABOUT</a>
+    <button class="search" aria-label="Search">⌕</button>
+    <a class="header-cta" href="../mark-groups-website/index.html#contact">START A CONVERSATION <span>→</span></a>
+  </nav>
+
+<div class="mark-logo-holder" aria-label="MARK GROUPS logo">
+  <img src="LOGO.png" alt="MARK GROUPS" class="mark-logo" onerror="this.style.display='none';this.parentElement.classList.add('logo-missing');this.parentElement.setAttribute('data-label','MARK LOGO IMAGE HOLDER')">
+</div>
+</header>
+
+<main>
+
+  <!-- 01 HERO -->
+  <section class="project-hero">
+    <div class="hero-media media-placeholder" id="heroMedia">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+      <a class="back-link" href="index.html">← &nbsp; BACK TO PROJECTS</a>
+      <div class="project-count" id="projectCount">01</div>
+
+      <div class="eyebrow" id="projectCategory">RESIDENTIAL</div>
+      <h1 id="projectTitle">THE MEADOWS</h1>
+      <p id="projectIntro">A modern residential project designed around balance, warmth, clarity and functionality.</p>
+
+      <a class="outline-btn" href="#gallery">VIEW GALLERY <span>→</span></a>
+
+      <div class="hero-facts">
+        <div><small>LOCATION</small><strong id="projectLocation">HYDERABAD</strong></div>
+        <div><small>AREA</small><strong id="projectArea">4,200 SQ. FT.</strong></div>
+        <div><small>STATUS</small><strong id="projectStatus">COMPLETED</strong></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 02 OVERVIEW -->
+  <section class="section dark overview reveal">
+    <div class="section-heading">
+      <span class="section-number">02</span>
+      <span class="section-rule"></span>
+      <h2>PROJECT OVERVIEW</h2>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-copy">
+        <p id="projectOverview">The project overview will describe the brief, context, scope and final outcome. This is the same content structure used for every MARK project.</p>
+      </div>
+
+      <div class="facts-list">
+        <div><span>CLIENT</span><strong id="factClient">PRIVATE RESIDENCE</strong></div>
+        <div><span>LOCATION</span><strong id="factLocation">HYDERABAD</strong></div>
+        <div><span>PLOT AREA</span><strong id="factPlot">—</strong></div>
+        <div><span>BUILT-UP AREA</span><strong id="factBuilt">4,200 SQ. FT.</strong></div>
+        <div><span>TYPE</span><strong id="factType">RESIDENTIAL</strong></div>
+        <div><span>STATUS</span><strong id="factStatus">COMPLETED</strong></div>
+      </div>
+
+      <div class="quote-card">
+        <span id="quote">SPACES THAT FEEL LIKE HOME.</span>
+        <small>MARK GROUPS</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 DESIGN APPROACH -->
+  <section class="section dark reveal">
+    <div class="section-heading">
+      <span class="section-number">03</span>
+      <span class="section-rule"></span>
+      <h2>DESIGN APPROACH</h2>
+    </div>
+
+    <div class="approach-grid">
+      <article><div class="approach-icon">◇</div><h3>SPACE PLANNING</h3><p>Open, efficient layouts shaped around the way the space is used.</p></article>
+      <article><div class="approach-icon">⌁</div><h3>MATERIAL SELECTION</h3><p>Materials selected for visual character, durability and long-term performance.</p></article>
+      <article><div class="approach-icon">▱</div><h3>CUSTOM CRAFT</h3><p>Furniture and details developed specifically for the project.</p></article>
+      <article><div class="approach-icon">⌂</div><h3>FINAL EXPERIENCE</h3><p>A considered balance of architecture, interiors, light and detail.</p></article>
+    </div>
+  </section>
+
+  <!-- 04 KEY SPACES -->
+  <section class="section dark reveal">
+    <div class="section-heading heading-with-tabs">
+      <div>
+        <span class="section-number">04</span>
+        <span class="section-rule"></span>
+        <h2>KEY SPACES</h2>
+      </div>
+      <div class="tabs">
+        <button class="active">ALL</button>
+        <button>LIVING ROOM</button>
+        <button>DINING AREA</button>
+        <button>KITCHEN</button>
+        <button>BEDROOM</button>
+        <button>POOJA ROOM</button>
+      </div>
+    </div>
+
+    <div class="spaces-grid" id="spacesGrid">
+      <article class="space-card" data-space="living room">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>LIVING ROOM</span><b>→</b></div>
+      </article>
+      <article class="space-card" data-space="dining area">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>DINING AREA</span><b>→</b></div>
+      </article>
+      <article class="space-card" data-space="kitchen">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>KITCHEN</span><b>→</b></div>
+      </article>
+      <article class="space-card" data-space="pooja room">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>POOJA ROOM</span><b>→</b></div>
+      </article>
+      <article class="space-card" data-space="bedroom">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>BEDROOM 01</span><b>→</b></div>
+      </article>
+      <article class="space-card" data-space="bedroom">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>BEDROOM 02</span><b>→</b></div>
+      </article>
+      <article class="space-card" data-space="bedroom">
+        <div class="image-placeholder">IMAGE HOLDER</div>
+        <div class="space-caption"><span>BEDROOM 03</span><b>→</b></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 05 BEFORE / AFTER + TIMELINE -->
+  <section class="section dark split-section reveal">
+    <div>
+      <div class="section-heading">
+        <span class="section-number">05</span>
+        <span class="section-rule"></span>
+        <h2>BEFORE / AFTER</h2>
+      </div>
+
+      <div class="before-after">
+        <div class="ba-layer ba-after">
+          <div class="image-placeholder">AFTER IMAGE</div>
+        </div>
+
+        <div class="ba-layer ba-before" id="beforeLayer">
+          <div class="image-placeholder">BEFORE IMAGE</div>
+        </div>
+        <span class="ba-corner-label ba-before-label">BEFORE</span>
+        <span class="ba-corner-label ba-after-label">AFTER</span>
+
+        <div class="ba-divider" id="baDivider" aria-hidden="true">
+          <span>↔</span>
+        </div>
+
+        <input
+          class="ba-range"
+          id="baRange"
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Compare before and after"
+        >
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading">
+        <span class="section-number">06</span>
+        <span class="section-rule"></span>
+        <h2>TIMELINE</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- 07 MATERIALS -->
+  <section class="section dark reveal">
+    <div class="section-heading">
+      <span class="section-number">07</span>
+      <span class="section-rule"></span>
+      <h2>MATERIALS &amp; BRANDS</h2>
+    </div>
+
+    <div class="materials-grid">
+      <article><div class="image-placeholder"><img src="after pic resize.png" alt="PLYWOOD"></div><strong>PLYWOOD</strong><span>Brand / specification</span></article>
+      <article><div class="image-placeholder"><img src="a1.png" alt="SURFACE"></div><strong>SURFACE</strong><span>Brand / specification</span></article>
+      <article><div class="image-placeholder"><img src="a2.png" alt="HARDWARE"></div><strong>HARDWARE</strong><span>Brand / specification</span></article>
+      <article><div class="image-placeholder"><img src="Exterior.png" alt="TEXTILE"></div><strong>TEXTILE</strong><span>Brand / specification</span></article>
+    </div>
+  </section>
+
+  <!-- 08 GALLERY -->
+  <section class="section dark reveal" id="gallery">
+    <div class="section-heading heading-with-tabs">
+      <div>
+        <span class="section-number">08</span>
+        <span class="section-rule"></span>
+        <h2>GALLERY</h2>
+      </div>
+      <a class="mini-btn" href="#">VIEW FULL GALLERY →</a>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="gallery-item tall" data-gallery="01" aria-label="Open gallery image 1"><span>GALLERY IMAGE</span></button>
+      <button class="gallery-item" data-gallery="02" aria-label="Open gallery image 2"><span>GALLERY IMAGE</span></button>
+      <button class="gallery-item" data-gallery="03" aria-label="Open gallery image 3"><span>GALLERY IMAGE</span></button>
+      <button class="gallery-item" data-gallery="04" aria-label="Open gallery image 4"><span>GALLERY IMAGE</span></button>
+      <button class="gallery-item" data-gallery="05" aria-label="Open gallery image 5"><span>GALLERY IMAGE</span></button>
+      <button class="more-photos" id="morePhotos" type="button" aria-label="Open all project photos">
+        <span>+12</span><small>MORE PHOTOS</small>
+      </button>
+    </div>
+  </section>
+
+  <!-- Gallery lightbox -->
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="gallery-modal-backdrop" data-close-gallery></div>
+    <div class="gallery-modal-panel" role="dialog" aria-modal="true" aria-label="Project gallery">
+      <button class="gallery-close" type="button" data-close-gallery aria-label="Close gallery">×</button>
+      <div class="gallery-modal-image" id="galleryModalImage">GALLERY IMAGE</div>
+      <div class="gallery-modal-controls">
+        <button type="button" id="galleryPrev">←</button>
+        <span id="galleryCounter">01 / 05</span>
+        <button type="button" id="galleryNext">→</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 09 CTA -->
+  <section class="project-cta reveal">
+    <div class="cta-image image-placeholder" id="ctaImage">PROJECT CTA IMAGE / VIDEO</div>
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <div class="section-heading">
+        <span class="section-number">09</span>
+        <span class="section-rule"></span>
+        <h2>LET'S BUILD YOURS</h2>
+      </div>
+      <p>Inspired by this project? Let's discuss how we can bring your vision to life.</p>
+      <a class="gold-btn" href="../mark-groups-website/index.html#contact">START A CONVERSATION <span>→</span></a>
+    </div>
+    <div class="cta-stats">
+      <div><b>150+</b><span>PROJECTS</span></div>
+      <div><b>20+</b><span>YEARS</span></div>
+      <div><b>100%</b><span>CLIENT FOCUS</span></div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-brand">
+    <div class="brand-logo">MARK</div>
+    <span>GROUPS</span>
+  </div>
+  <nav>
+    <a>INTERIORS</a><a>CONSTRUCTION</a><a>CUSTOM FURNITURE</a><a>REAL ESTATE</a><a>PROJECTS</a><a>ABOUT</a><a>CONTACT</a>
+  </nav>
+  <div class="socials"><a aria-label="Instagram">◎</a><a aria-label="Facebook">f</a><a aria-label="LinkedIn">in</a></div>
+  <div class="footer-bottom"><span>© 2026 MARK GROUPS. ALL RIGHTS RESERVED.</span><span>INDIA &nbsp;|&nbsp; SPACES &nbsp;|&nbsp; PEOPLE &nbsp;|&nbsp; BEYOND</span></div>
+</footer>
+
+
+
+<section class="contact-anchor" id="contact" aria-hidden="true"></section>
+
+<script src="project data.js"></script>
+<script src="Project.js"></script>
+
+</body>
+</html>

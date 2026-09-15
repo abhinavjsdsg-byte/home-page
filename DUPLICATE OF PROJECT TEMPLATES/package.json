@@ -1,0 +1,9 @@
+{
+  "name": "mark-groups-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MARK GROUPS luxury website UI",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
