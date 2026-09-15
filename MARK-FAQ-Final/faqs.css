@@ -951,5 +951,7 @@ input:focus-visible {
   .header-inner .main-nav,.header-inner .header-cta>.btn{display:none!important}
   .header-inner .logo{grid-column:2;grid-row:1;justify-self:center}
   .header-inner .header-cta{grid-column:1;grid-row:1;justify-self:start}
-  .header-inner .hamburger{display:block!important}
+  .header-inner .hamburger{display:flex!important;align-items:center;justify-content:center;flex-direction:column;gap:5px;width:42px;height:42px;padding:10px;border:1px solid rgba(201,166,107,.65);color:var(--faq-paper)}
+  .header-inner .hamburger span{width:18px;height:1px;margin:0;background:currentColor}
+  .site-header .logo-image{width:100px;max-height:38px}
 }

@@ -17,7 +17,7 @@ window.PROJECTS = [
     slug: "nitchal-grand",
     title: "NITCHAL GRAND",
     category: "INTERIORS",
-    intro: "A considered restaurant interior shaped around atmosphere, movement and guest experience.",
+    intro: "A refined hospitality space designed around atmosphere, circulation and a memorable guest experience.",
     location: "HYDERABAD, TELANGANA",
     area: "2,000 SQ. FT.",
     status: "COMPLETED",
@@ -25,11 +25,11 @@ window.PROJECTS = [
     plot: "—",
     type: "RESTAURANT INTERIOR",
     quote: "DESIGNED FOR THE EXPERIENCE.",
-    overview: "Nitchal Grand is a hospitality interior project designed around atmosphere, movement, material character and the experience of every guest.",
+    overview: "Nitchal Grand is a hospitality interior project shaped around guest movement, warm materials, layered lighting and a strong sense of arrival.",
 
-    hero: "after pic resize.png",
-    before: "",
-    after: "",
+    hero: "public/img/Nitchel%20grand%20project%20img/hero%20image.png",
+    before: "public/img/Nitchel%20grand%20project%20img/before%20pic.png",
+    after: "public/img/Nitchel%20grand%20project%20img/sitting%20area.png",
 
     approach: [
       ["SPACE PLANNING", "Open layouts with maximum natural light."],
@@ -39,9 +39,9 @@ window.PROJECTS = [
     ],
 
     spaces: [
-      ["sitting area", "SITTING AREA", "after pic.png"],
-      ["entrance", "ENTRANCE", "a1.png"],
-      ["exterior", "EXTERIOR", "Exterior.png"]
+      ["sitting area", "SITTING AREA", "public/img/Nitchel%20grand%20project%20img/sitting%20area.png"],
+      ["entrance", "ENTRANCE", "public/img/Nitchel%20grand%20project%20img/enterance.png"],
+      ["exterior", "EXTERIOR", "public/img/Nitchel%20grand%20project%20img/sitting%20arrea%203.png"]
     ],
 
     timeline: [
@@ -53,13 +53,19 @@ window.PROJECTS = [
     ],
 
     materials: [
-      ["PLYWOOD", "CenturyPly", "after pic resize.png"],
-      ["STONE", "Italian Marble", "a1.png"],
-      ["HARDWARE", "Hettich", "a2.png"],
-      ["FABRICS", "D'Decor", "Exterior.png"]
+      ["PLYWOOD", "Project Specification", "public/img/Nitchel%20grand%20project%20img/plywood.jpg"],
+      ["SURFACE", "Project Specification", "public/img/Nitchel%20grand%20project%20img/SURFACE.jpg"],
+      ["HARDWARE", "Project Specification", "public/img/Nitchel%20grand%20project%20img/hardwware.jpg"],
+      ["FITTING", "Project Specification", "public/img/Nitchel%20grand%20project%20img/Fitting.jpg"]
     ],
 
-    gallery: ["after pic resize.png", "a1.png", "a2.png", "Exterior.png", "Big a pic.png"],
+    gallery: [
+      "public/img/Nitchel%20grand%20project%20img/hero%20image.png",
+      "public/img/Nitchel%20grand%20project%20img/sitting%20area.png",
+      "public/img/Nitchel%20grand%20project%20img/sitting%20area%202.png",
+      "public/img/Nitchel%20grand%20project%20img/enterance.png",
+      "public/img/Nitchel%20grand%20project%20img/sitting%20arrea%203.png"
+    ],
     morePhotos: 12
   },
 

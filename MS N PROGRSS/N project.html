@@ -64,22 +64,22 @@ IMPORTANT:
 
 <header class="site-header">
   <nav class="nav nav-left">
-    <a href="../mark-groups-website/index.html#interiors">INTERIORS</a>
-    <a href="../mark-groups-website/index.html#construction">CONSTRUCTION</a>
-    <a href="../mark-groups-website/index.html#furniture">CUSTOM FURNITURE</a>
-    <a href="../mark-groups-website/index.html#real-estate">REAL ESTATE</a>
+    <a href="../Interior%20page/index.html">INTERIORS</a>
+    <a href="../Construction%20add%20aniamtion/construction.html">CONSTRUCTION</a>
+    <a href="../Furniture/custom-furniture.html">CUSTOM FURNITURE</a>
+    <a href="../Real%20estate/index.html">REAL ESTATE</a>
   </nav>
 
   <nav class="nav nav-right">
-    <a href="../mark-groups-website/index.html#projects">PROJECTS</a>
-    <a href="../mark-groups-website/index.html#about">ABOUT</a>
+    <a href="../index.html#projects">PROJECTS</a>
+    <a href="../legacy%20page/index.html">ABOUT</a>
     <button class="search" aria-label="Search">⌕</button>
-    <a class="header-cta" href="../mark-groups-website/index.html#contact">START A CONVERSATION <span>→</span></a>
+    <a class="header-cta" href="../Contact%20page/MARK_CONTACT_DELIVERY/public/contact.html">START A CONVERSATION <span>→</span></a>
   </nav>
 
-<div class="mark-logo-holder" aria-label="MARK GROUPS logo">
+<a class="mark-logo-holder" href="../index.html" aria-label="MARK GROUPS home">
   <img src="LOGO-removebg-preview.png" alt="MARK GROUPS" class="mark-logo">
-</div>
+</a>
 
 <button class="mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false">
   <span></span>
@@ -90,13 +90,13 @@ IMPORTANT:
 
 <div class="mobile-menu-panel" id="mobileMenuPanel" aria-hidden="true">
   <div class="mobile-menu-inner">
-    <a href="../mark-groups-website/index.html#interiors">Interiors</a>
-    <a href="../mark-groups-website/index.html#construction">Construction</a>
-    <a href="../mark-groups-website/index.html#furniture">Custom Furniture</a>
-    <a href="../mark-groups-website/index.html#real-estate">Real Estate</a>
-    <a href="../mark-groups-website/index.html#projects">Projects</a>
-    <a href="../mark-groups-website/index.html#about">About</a>
-    <a class="mobile-menu-cta" href="../mark-groups-website/index.html#contact">Start a Conversation</a>
+    <a href="../Interior%20page/index.html">Interiors</a>
+    <a href="../Construction%20add%20aniamtion/construction.html">Construction</a>
+    <a href="../Furniture/custom-furniture.html">Custom Furniture</a>
+    <a href="../Real%20estate/index.html">Real Estate</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../legacy%20page/index.html">About</a>
+    <a class="mobile-menu-cta" href="../Contact%20page/MARK_CONTACT_DELIVERY/public/contact.html">Start a Conversation</a>
   </div>
 </div>
 
@@ -331,7 +331,7 @@ IMPORTANT:
         <h2>LET'S BUILD YOURS</h2>
       </div>
       <p>Inspired by this project? Let's discuss how we can bring your vision to life.</p>
-      <a class="gold-btn" href="../mark-groups-website/index.html#contact">START A CONVERSATION <span>→</span></a>
+      <a class="gold-btn" href="../Contact%20page/MARK_CONTACT_DELIVERY/public/contact.html">START A CONVERSATION <span>→</span></a>
     </div>
     <div class="cta-stats">
       <div><b>150+</b><span>PROJECTS</span></div>
@@ -364,20 +364,23 @@ IMPORTANT:
   const mobileMenuButton = document.querySelector('.mobile-menu-button');
   const mobileMenuPanel = document.getElementById('mobileMenuPanel');
   if (mobileMenuButton && mobileMenuPanel) {
-    mobileMenuButton.addEventListener('click', () => {
-      const isOpen = mobileMenuPanel.classList.toggle('open');
+    const setMobileMenuState = (isOpen) => {
+      mobileMenuPanel.classList.toggle('open', isOpen);
       mobileMenuButton.classList.toggle('open', isOpen);
       mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
       mobileMenuPanel.setAttribute('aria-hidden', String(!isOpen));
+      mobileMenuPanel.style.setProperty('transform', isOpen ? 'translateY(0)' : 'translateY(-115%)', 'important');
+      mobileMenuPanel.style.setProperty('opacity', isOpen ? '1' : '0', 'important');
+      mobileMenuPanel.style.setProperty('visibility', isOpen ? 'visible' : 'hidden', 'important');
+      mobileMenuPanel.style.setProperty('pointer-events', isOpen ? 'auto' : 'none', 'important');
       document.body.classList.toggle('menu-open', isOpen);
+    };
+    mobileMenuButton.addEventListener('click', () => {
+      setMobileMenuState(!mobileMenuPanel.classList.contains('open'));
     });
     mobileMenuPanel.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        mobileMenuPanel.classList.remove('open');
-        mobileMenuButton.classList.remove('open');
-        mobileMenuButton.setAttribute('aria-expanded', 'false');
-        mobileMenuPanel.setAttribute('aria-hidden', 'true');
-        document.body.classList.remove('menu-open');
+        setMobileMenuState(false);
       });
     });
   }

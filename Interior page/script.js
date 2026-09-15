@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modal");
   const film = document.getElementById("film");
   const close = document.getElementById("close");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
   const revealItems = document.querySelectorAll(".reveal");
   const observer = new IntersectionObserver((entries, obs) => {
@@ -18,6 +20,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 30);
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
+
+  if (menuToggle && mobileMenu) {
+    const closeMenu = () => {
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      mobileMenu.classList.remove("open");
+    };
+    menuToggle.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+      mobileMenu.classList.toggle("open", !isOpen);
+    });
+    mobileMenu.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMenu));
+  }
 
   // Smoothly make buttons feel responsive without changing layout.
   document.querySelectorAll(".cta,.gold,.outline-btn,.project-card,.service-card").forEach(el => {
