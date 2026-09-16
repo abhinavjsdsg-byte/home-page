@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 10000);
 
     try {
-      const response = await fetch("/api/leads", {
+      const response = await fetch("https://mark-groups-api.onrender.com/api/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
