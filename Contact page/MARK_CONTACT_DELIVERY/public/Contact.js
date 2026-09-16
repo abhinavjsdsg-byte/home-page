@@ -93,7 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       clearTimeout(timeout);
 
-      const result = await response.json();
+     const responseText = await response.text();
+
+let result;
+
+try {
+  result = JSON.parse(responseText);
+} catch (error) {
+  console.error("NON-JSON SERVER RESPONSE:", responseText);
+
+  throw new Error(
+    `API error ${response.status}. The server is not accepting the enquiry request.`
+  );
+}
 
       console.log("SERVER RESPONSE:", result);
 
